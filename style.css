@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: gold;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: #222;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    color: gold;
+}
+
+.bienvenida {
+    font-size: 1.2em;
+    color: white;
+    margin-top: 10px;
+}
+
+main {
+    margin: 20px;
+}
+
+.countdown-section, .ubicacion-section {
+    margin: 50px 0;
+    width: auto ;
+    height: auto ; 
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2em;
+}
+
+#countdown div {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#countdown span {
+    font-size: 2.5em;
+    color: gold;
+}
+
+footer {
+    padding: 20px;
+    background-color: #222;
+    color: gold;
+}
+
+iframe {
+    margin-top: 20px;
+    border: 2px solid gold;
+    border-radius: 10px;
+}
+
+/* Media Queries para Responsividad */
+
+/* Dispositivos móviles (pantallas pequeñas) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .bienvenida {
+        font-size: 1em;
+    }
+
+    #countdown {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #countdown div {
+        padding: 10px;
+        font-size: 1.5em;
+    }
+
+    #countdown span {
+        font-size: 2em;
+    }
+}
+
+/* Tablets (pantallas medianas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .bienvenida {
+        font-size: 1.1em;
+    }
+
+    #countdown {
+        gap: 15px;
+    }
+
+    #countdown div {
+        padding: 10px 15px;
+        font-size: 1.8em;
+    }
+
+    #countdown span {
+        font-size: 2.2em;
+    }
+
+    iframe {
+        height: 400px;
+    }
+}
+
+/* Pantallas grandes (laptops y desktops) */
+@media (min-width: 1025px) {
+    iframe {
+        width: 80%;
+        height: 450px;
+    }
+}
